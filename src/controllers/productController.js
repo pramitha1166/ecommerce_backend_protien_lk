@@ -23,7 +23,7 @@ router.get('/single/:id', async(req,res) => {
     }
 })
 
-router.get('/list/category/:id', async(req,res) => {
+router.get('/list/product/category/:id', async(req,res) => {
     try {
         const result = await listProductsByCategory(req.params.id)
         res.status(200).json({result})
