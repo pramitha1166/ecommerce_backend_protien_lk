@@ -7,7 +7,8 @@ require('dotenv').config()
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
-const router = require('./src/controllers/productController')
+const product_router = require('./src/controllers/productController')
+const category_router = require('./src/controllers/categoryControoler')
 const app = express()
 
 //define port
@@ -28,7 +29,8 @@ mongoose.connect(process.env.DATABASE, (err) => {
 })
 
 //define routes
-app.use('/products', router)
+app.use('/products', product_router)
+app.use('/category', category_router)
 
 app.listen(PORT, (err) => {
     if(err) {
