@@ -1,9 +1,9 @@
 var WooCommerceAPI = require('@woocommerce/woocommerce-rest-api').default;
  
 var WooCommerce = new WooCommerceAPI({
-    url: 'http://codeworker.eastus.cloudapp.azure.com',
-    consumerKey: 'ck_a998504ade308afa2a656109373ea63f444409aa',
-    consumerSecret: 'cs_fdd76a77cdd02f679bd039da9138fb52afc297ec',
+    url: 'http://localhost/protienlkapi',
+    consumerKey: 'ck_fec1063364c3e551081ec4c4a2076c9d1db0653d',
+    consumerSecret: 'cs_2007c2d85ba4b81127e109c2e1b709bbc27f44de',
     version: 'wc/v3'
 });
 
